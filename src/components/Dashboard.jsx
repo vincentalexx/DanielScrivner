@@ -23,7 +23,7 @@ const Dashboard = () => {
                         <p className='bg-transparent text-light'>20 Minute Playbook - Jessica Schaefer of Beveland Acorns</p>
                     </div>
                 </a>
-                <div className='d-flex gap-2 text-decoration-none align-items-center w-75'>
+                <div className='d-flex gap-2 text-decoration-none w-75'>
                     <a href="#" className='bg-dark text-decoration-none py-2 px-4 text-light fw-bold h6 rounded'>Starts Here</a>
                     <a href="#" className='bg-dark text-decoration-none py-2 px-4 text-light fwbold h6 rounded'>Listen to the Podcast</a>
                 </div>

@@ -6,6 +6,9 @@ import { Button } from 'react-bootstrap'
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import './Navbar.css'
+import Dropdown from 'react-bootstrap/Dropdown';
+import NavItem from 'react-bootstrap/NavItem';
+import NavLink from 'react-bootstrap/NavLink';
 
 const NavBar = () => {
 
@@ -22,11 +25,11 @@ const NavBar = () => {
             <Navbar fixed='top' collapseOnSelect expand="lg" className=" px-5 d-flex flex-column align-items-center" style={{backgroundColor: '#121212'}}>
                 <div className='w-100 d-flex flex-lg-row-reverse justify-content-between align-items-center bg-transparent'>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" className=''/>
-                    <Button className='border-secondary border-1 d-none d-lg-block'  style={{backgroundColor: '#323232'}}>Subscribe</Button>
+                    <Button className='border-1 d-none d-lg-block btn btn-secondary' >Subscribe</Button>
 
                     <Navbar.Brand href="#home" className='text-white bg-transparent'>Daniel Scrivner</Navbar.Brand>
 
-                    <a href="#" className='d-flex bg-transparent'>
+                    <a href="#" className='d-flex bg-transparent hover-overlay'>
                         <FontAwesomeIcon icon={faSearch} className='border border-1 p-1 border-secondary rounded text-white' style={{backgroundColor: '#323232'}}/>
                     </a>
                 </div>
@@ -42,11 +45,14 @@ const NavBar = () => {
                             <Nav.Link href="#subscribe" className=' text-light d-lg-none'>
                                 <Button className='border border-secondary border-1'  style={{backgroundColor: '#323232'}}>Subscribe</Button>
                             </Nav.Link>
-                            <NavDropdown title="More" className='bg-transparent text-light d-none d-lg-block' id="collapsible-nav-dropdown" show={show} onMouseEnter={showDropdown}onMouseLeave={hideDropdown}>
-                                <NavDropdown.Item href="#action/3.1" className='bg-dark text-light pr-5 '>About</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2" className='bg-dark text-light'>Newsroom</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3" className='bg-dark text-light'>Contact</NavDropdown.Item>
-                            </NavDropdown>
+                            <Dropdown as={NavItem} className='bg-transparent text-white d-none d-lg-block' show={show} onMouseEnter={showDropdown}onMouseLeave={hideDropdown}>
+                                <Dropdown.Toggle as={NavLink} className='text-white' >More</Dropdown.Toggle>
+                                <Dropdown.Menu style={{backgroundColor: '#121212'}}>
+                                    <Dropdown.Item className=' text-light'>About</Dropdown.Item>
+                                    <Dropdown.Item className=' text-light'>Newsroom</Dropdown.Item>
+                                    <Dropdown.Item className=' text-light'>Contact</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
                         </Nav>
                     </Navbar.Collapse>
                 </div>
