@@ -9,6 +9,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import Navbar from './components/Navbar.jsx'
 import Dashboard from './components/Dashboard.jsx'
 import Slick from './components/Slick.jsx'
+import Summary from './components/Summary.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
       <Navbar />
       <Dashboard />
       <Slick />
+      <Summary />
     </div>
   )
 }
