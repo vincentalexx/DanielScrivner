@@ -72,8 +72,8 @@ const NavBar = () => {
         <div>
             <Navbar fixed='top' collapseOnSelect expand="lg" className=" d-flex flex-column align-items-center" style={{backgroundColor: '#121212'}}>
                 <div className='w-100 d-flex flex-lg-row-reverse justify-content-between align-items-center bg-transparent px-3'>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" className=''  />
-                    <Button className='  navbtn' >Subscribe</Button>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" className='bg-secondary'  />
+                    <Button className='d-none d-lg-block navbtn' >Subscribe</Button>
 
                     <a href="#" className='navhov d-flex justify-content-center align-items-center text-decoration-none h4 bg-transparent fw-bold'>Daniel Scrivner</a>
 
@@ -95,7 +95,7 @@ const NavBar = () => {
                             <Nav.Link href="#newsroom" className=' navhov d-lg-none'>Newsroom</Nav.Link>
                             <Nav.Link href="#contact" className=' navhov d-lg-none'>Contact</Nav.Link>
                             <Nav.Link href="#subscribe" className=' navhov d-lg-none'>
-                                <Button className='border border-secondary border-1'  style={{backgroundColor: '#323232'}}>Subscribe</Button>
+                                <Button className='d-lg-none navbtn' >Subscribe</Button>
                             </Nav.Link>
                             <Dropdown as={NavItem} className='bg-transparent navhov d-none d-lg-block' show={show} onMouseEnter={showDropdown}onMouseLeave={hideDropdown}>
                                 <Dropdown.Toggle as={NavLink} className='navhov' >More</Dropdown.Toggle>
