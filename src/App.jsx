@@ -10,6 +10,8 @@ import Navbar from './components/Navbar.jsx'
 import Dashboard from './components/Dashboard.jsx'
 import Slick from './components/Slick.jsx'
 import Summary from './components/Summary.jsx'
+import Footer from './components/Footer.jsx'
+import Outliers from './components/Outliers.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +21,9 @@ function App() {
       <Navbar />
       <Dashboard />
       <Slick />
+      <Outliers />
       <Summary />
+      <Footer />
     </div>
   )
 }

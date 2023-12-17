@@ -1,0 +1,40 @@
+.btnout:hover {
+    background-color: rgb(171, 171, 171);
+    transition: all 0.3s ease-out;
+}
+
+.btnout{
+    color: black;
+    background-color: white;
+}
+
+.pp:hover {
+    transition: all 0.3s ease-out;
+    color: white;
+}
+
+.pp{
+    color: gray;
+}
+
+.text-hov{
+    color: gray;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.text-hov:hover {
+    color: #ff9900;
+    transition: all 0.3s ease-out;
+}
+
+.name-hov{
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.name-hov:hover {
+    color: #ff9900;
+    transition: all 0.3s ease-out;
+}

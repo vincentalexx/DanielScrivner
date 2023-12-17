@@ -5,7 +5,7 @@ import bloomberg from '../assets/bloomberg.svg'
 import theNYtimes from '../assets/theNYtimes.svg'
 import theWTpost from '../assets/theWTpost.svg'
 import espn from '../assets/espn.svg'
-import $ from 'jquery'
+import './Dashboard.css'
 
 const Dashboard = () => {
     return (
@@ -16,16 +16,16 @@ const Dashboard = () => {
             <div style={{maxWidth: "650px"}} className='mt-5 d-flex flex-column align-items-center align-items-md-start'>
                 <p className='h1 text-light'>Timeless insights for business and life.</p>
                 <p style={{maxWidth: "540px"}}>Every week, I sit down with someone in the Top 1% of their field — from NYT bestselling authors to Oscar winners — to decode what they've mastered. Listen as I uncover the tactics, routines, and habits that will propel you to the top of your field.</p>
-                <a href="#" className='d-flex gap-3 bg-dark text-decoration-none p-3 align-items-center w-75 rounded my-2'>
+                <a href="#" className='d-flex gap-3 cards text-decoration-none p-3 align-items-center w-75 rounded my-2'>
                     <img src={jessica} alt="jessica" style={{maxWidth: "100px"}} className='rounded'/>
-                    <div className='bg-transparent p-2'>
-                        <p className='bg-transparent text-warning fw-bold h6'>LATEST EPISODES</p>
-                        <p className='bg-transparent text-light'>20 Minute Playbook - Jessica Schaefer of Beveland Acorns</p>
+                    <div className='bg-transparent p-2 d-flex flex-column justify-content-center'>
+                        <p className='bg-transparent fw-bold mb-0' style={{fontSize: '13px', color: '#ff9900'}}>LATEST EPISODES</p>
+                        <p className='bg-transparent mb-0'>20 Minute Playbook - Jessica Schaefer of Beveland Acorns</p>
                     </div>
                 </a>
                 <div className='d-flex gap-2 text-decoration-none w-75'>
-                    <a href="#" className='bg-dark text-decoration-none py-2 px-4 text-light fw-bold h6 rounded'>Starts Here</a>
-                    <a href="#" className='bg-dark text-decoration-none py-2 px-4 text-light fwbold h6 rounded'>Listen to the Podcast</a>
+                    <a href="#" className='cards text-decoration-none py-2 px-4 text-light fw-bold h6 rounded'>Starts Here</a>
+                    <a href="#" className='cards text-decoration-none py-2 px-4 text-light fwbold h6 rounded'>Listen to the Podcast</a>
                 </div>
             </div>
             <div className='position-absolute d-flex align-items-end' style={{marginTop: '550px'}}>

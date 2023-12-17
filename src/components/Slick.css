@@ -13,3 +13,17 @@
 .slick-prev::before{
     margin-right: 10px;
 }
+
+.slick-hover:hover .title{
+    text-decoration: underline;
+}
+
+.card-topic:hover {
+    color: #ff9900;
+    transition: all 0.3s ease-out;
+}
+
+.card-topic:hover .logo{
+    background-color: #ff9900;
+    transition: all 0.3s ease-out;
+}

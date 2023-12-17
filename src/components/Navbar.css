@@ -1,3 +1,75 @@
 .dropdown-menu{
     --bs-dropdown-bg: rgba(var(--bs-dark-rgb));
 }
+
+.modal-dialog{
+    background-color: #121212;
+    justify-content: center;
+    
+}
+
+.modal-content{
+    background-color: #171717;
+    border-color: rgb(38, 38, 38);
+    border-width: 0.2px;
+    width: 400px;
+}
+
+.search{
+    border-radius: 50px;
+}
+
+.icon{
+    background-color: #171717;
+    border-color: rgb(38, 38, 38);
+    border-width: 0.2px;
+    width: 400px;
+}
+
+.navhov, .search{
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.navhov:hover {
+    color: #ff9900;
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+}
+
+.navbtn{
+    color: white;
+    background-color: #323232;
+    font-size: 13px;
+    border: #2f2f2f;
+}
+
+.navbtn:hover{
+    color: gray;
+    background-color: #323232;
+}
+
+.modalbtn{
+    background-color: rgb(33, 33, 33);
+    transition: all 0.4s ease-out;
+}
+
+.modalbtn:hover{
+    background-color: rgb(46, 46, 46);
+    transition: all 0.4s ease-out;
+}
+
+.modal-search{
+    outline: none;
+    color: white;
+    background-color: transparent;
+}
+
+.icon-search{
+    background-color: transparent;
+}
+
+input[type=text]:focus{
+    background-color: black;
+}
