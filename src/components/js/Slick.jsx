@@ -1,10 +1,10 @@
 import $ from 'jquery'
-import './Slick.css'
+import '../css/Slick.css'
 import { Button, Card } from 'react-bootstrap';
 import { SlickList } from './SlickList';
-import fire from '../assets/fire.svg'
-import time from '../assets/time.svg'
-import archive from '../assets/archive.svg'
+import fire from '../../assets/images/fire.svg'
+import time from '../../assets/images/time.svg'
+import archive from '../../assets/images/archive.svg'
 
 
 
@@ -89,7 +89,7 @@ const Slick = () => {
               <a href="#" className='text-decoration-none d-flex justify-content-center align-items-center'>
                 <Card style={{ width: '80%' }} className='card-topic bg-light text-center d-flex justify-content-center align-items-center'>
                   <Card.Body className='bg-transparent px-5 d-flex flex-column justify-content-center align-items-center' style={{maxWidth: '400px'}}>
-                    <div style={{width: '40px'}} className='logo d-flex justify-content-center align-items-center rounded-circle mb-3'>
+                    <div style={{width: '40px'}} className='logo images/d-flex justify-content-center align-items-center rounded-circle mb-3'>
                      <img src={archive} alt="archive" className=' text-white bg-transparent' style={{width: '37px', padding: '10px'}}/>
                     </div>
                     <Card.Title className='bg-transparent fw-bold'>THE ARCHIVES</Card.Title>

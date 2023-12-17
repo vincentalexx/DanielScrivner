@@ -1,5 +1,5 @@
 import { Button } from "react-bootstrap";
-import './OSF.css'
+import '../css/OSF.css'
 
 const Summary = () => {
     return (

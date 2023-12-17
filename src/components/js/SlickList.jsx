@@ -1,8 +1,8 @@
-import jessica from '../assets/jessica.jpeg'
-import mike from '../assets/mike.jpeg'
-import robbie from '../assets/robbie.jpeg'
-import brett from '../assets/brett.jpeg'
-import luke from '../assets/luke.jpeg'
+import jessica from '../../assets/images/jessica.jpeg'
+import mike from '../../assets/images/mike.jpeg'
+import robbie from '../../assets/images/robbie.jpeg'
+import brett from '../../assets/images/brett.jpeg'
+import luke from '../../assets/images/luke.jpeg'
 
 export const SlickList = [
     {

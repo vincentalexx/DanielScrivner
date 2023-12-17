@@ -5,14 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from 'react-bootstrap'
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from 'react';
-import './Navbar.css'
+import '../css/Navbar.css'
 import Dropdown from 'react-bootstrap/Dropdown';
 import NavItem from 'react-bootstrap/NavItem';
 import NavLink from 'react-bootstrap/NavLink';
 import Modal from 'react-bootstrap/Modal';
-import fire from '../assets/fire.svg'
-import time from '../assets/time.svg'
-import archive from '../assets/archive.svg'
+import fire from '../../assets/images/fire.svg'
+import time from '../../assets/images/time.svg'
+import archive from '../../assets/images/archive.svg'
 
 
 const NavBar = () => {
@@ -94,8 +94,8 @@ const NavBar = () => {
                             <Nav.Link href="#about" className=' navhov d-lg-none'>About</Nav.Link>
                             <Nav.Link href="#newsroom" className=' navhov d-lg-none'>Newsroom</Nav.Link>
                             <Nav.Link href="#contact" className=' navhov d-lg-none'>Contact</Nav.Link>
-                            <Nav.Link href="#subscribe" className=' navhov d-lg-none'>
-                                <Button className='d-lg-none navbtn' >Subscribe</Button>
+                            <Nav.Link href="#subscribe" className='w-100  navhov d-lg-none'>
+                                <Button className='d-lg-none navbtn w-100' >Subscribe</Button>
                             </Nav.Link>
                             <Dropdown as={NavItem} className='bg-transparent navhov d-none d-lg-block' show={show} onMouseEnter={showDropdown}onMouseLeave={hideDropdown}>
                                 <Dropdown.Toggle as={NavLink} className='navhov' >More</Dropdown.Toggle>

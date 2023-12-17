@@ -1,4 +1,4 @@
-import './OSF.css'
+import '../css/OSF.css'
 
 const Footer = () => {
     return (

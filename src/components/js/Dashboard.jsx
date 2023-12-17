@@ -1,11 +1,11 @@
-import daniel from '../assets/daniel.png'
-import jessica from '../assets/jessica.jpeg'
-import billboard from '../assets/billboard.svg'
-import bloomberg from '../assets/bloomberg.svg'
-import theNYtimes from '../assets/theNYtimes.svg'
-import theWTpost from '../assets/theWTpost.svg'
-import espn from '../assets/espn.svg'
-import './Dashboard.css'
+import daniel from '../../assets/images/daniel.png'
+import jessica from '../../assets/images/jessica.jpeg'
+import billboard from '../../assets/images/billboard.svg'
+import bloomberg from '../../assets/images/bloomberg.svg'
+import theNYtimes from '../../assets/images/theNYtimes.svg'
+import theWTpost from '../../assets/images/theWTpost.svg'
+import espn from '../../assets/images/espn.svg'
+import '../css/Dashboard.css'
 
 const Dashboard = () => {
     return (
