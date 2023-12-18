@@ -4,7 +4,7 @@ import '../css/OSF.css'
 const Summary = () => {
     return (
         <div className="d-flex flex-column justify-content-center align-items-center text-center text-light p-5 gap-3">
-            <p className="fw-bold font-italic h2">GET THE WEEKLY SUMMARY</p>
+            <p className="fw-bold font-italic h4">GET THE WEEKLY SUMMARY</p>
             <div>
                 <p className="h6" style={{maxWidth: '480px'}}>Join 7,500+ including Fortune 500 CEOs, championship coaches, and bestselling authors who get my free weekly summary.</p>
             </div>

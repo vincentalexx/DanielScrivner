@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Italian-Plate";   /*Can be any text*/
+    src: local("ItalianPlateNo1Expanded-Demibold"),
+      url("assets/fonts/ItalianPlateNo1Expanded-Demibold.otf") format("truetype");
+  }
+
+  *{
+    font-family: Italian-Plate;
+  }
