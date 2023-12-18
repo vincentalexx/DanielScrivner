@@ -5,7 +5,9 @@ import { SlickList } from './SlickList';
 import fire from '../../assets/images/fire.svg'
 import time from '../../assets/images/time.svg'
 import archive from '../../assets/images/archive.svg'
-
+import volume from '../../assets/images/volume.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faVolumeHigh } from '@fortawesome/free-solid-svg-icons';
 
 
 const Slick = () => {
@@ -51,8 +53,11 @@ const Slick = () => {
                 return (
                   <a href="#" className='d-flex flex-column justify-content-center align-items-center bg-transparent px-2 text-decoration-none'>
                     <Card style={{ maxWidth: '400px', backgroundColor: 'transparent'}} className='slick-hover rounded pb-2 d-flex justify-content-center align-items-center'>
-                      
-                      <Card.Img variant="top" src={slick.img} />
+                      <div className='d-flex justify-content-center '>
+                        <Card.Img variant="top" src={slick.img} />
+                        <p className='position-absolute mt-3 rounded text-light p-2 fw-bold' style={{fontSize: '13px', opacity: '0.6'}}>NEW EPISODE</p>
+                        <div className='position-absolute rounded-5 text-light fw-bold d-flex justify-content-center align-items-center px-3' style={{fontSize: '13px', opacity: '0.6', marginTop: '64%'}}> <FontAwesomeIcon icon={faVolumeHigh} className='icon-search pe-1 text-white ' /> <p className='position-relative ' style={{marginTop: '12px'}}>Listen Now</p></div>
+                      </div>
                       <Card.Body style={{height: '50vh'}} className='border rounded bg-light'>
                         <Card.Title className='bg-transparent title'>{slick.title}</Card.Title>
                         <Card.Text className='text-black bg-transparent'>{slick.text}</Card.Text>

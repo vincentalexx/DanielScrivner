@@ -29,7 +29,7 @@ const NavBar = () => {
             >
             <Modal.Body className='bg-transparent d-flex flex-column justify-content-center align-items-center p-0 pt-4'>
                 <p style={{width: '250px'}} className='bg-transparent fs-6 fw-bold mb-3'>Quickly find episodes, articles, and pages across the website.</p>
-                <div className='search d-flex justify-content-center align-items-center search  border' >
+                <div className='search d-flex justify-content-center align-items-center search border' >
                     <FontAwesomeIcon icon={faSearch} className='icon-search p-3 pr-0 text-white ' />
                     <input type="text" name="search" id="search" className=' p-3 modal-search border-0 rounded-end-5' placeholder='Search...'/>
                 </div>

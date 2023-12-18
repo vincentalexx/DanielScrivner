@@ -16,7 +16,7 @@ const Outliers = () => {
     return (
         <div className='w-100 d-flex flex-column flex-lg-row justify-content-center align-items-center p-4 gap-4'>
             <div className="text-center d-flex flex-column justify-content-center align-items-center ">
-                <p className="text-warning fw-bold">LISTEN NOW</p>
+                <p className="fw-bold" style={{color: '#ff9900'}}>LISTEN NOW</p>
                 <p className="text-light h2">Outliers Podcast</p>
                 <p className="text-light h5" style={{maxWidth: '540px'}}>Every week, I sit down with someone in the Top 1% of their field to decode what they've mastered and what they've learned along the way.</p>
                 <button style={{paddingInline: '30px', letterSpacing: '1px'}} className='btnout py-3 rounded-end-5 border-0 rounded-start-5'>Explore Episodes</button>
@@ -36,7 +36,7 @@ const Outliers = () => {
                 </div>
             </div>
             <div className="text-center d-flex flex-column justify-content-center align-items-center ">
-                <p className="text-warning fw-bold">SUBSCRIBE NOW</p>
+                <p className="fw-bold" style={{color: '#ff9900'}}>SUBSCRIBE NOW</p>
                 <p className="text-light h2">Friday 5 Email</p>
                 <p className="text-light h5" style={{maxWidth: '540px'}}>Every Friday, I share five things I've been reading, using, and loving—including articles, biohacks, gadgets, and more.</p>
                 <button style={{paddingInline: '30px', letterSpacing: '1px'}} className='btnout py-3 rounded-end-5 border-0 rounded-start-5'>Explore Episodes</button>
